@@ -10,12 +10,6 @@
 
 • GoodbyeDPI uygulaması benim yaptığım bir uygulama değildir. Ben sadece uygulamanın arayüzlü bir şekilde kurulup, yönetilmesi için batch script ile bir yönetim programı hazırladım. Uygulamanın resmi adresi= https://github.com/ValdikSS/GoodbyeDPI
 
-### UYARI
-• Daha önce ulaşabildiğiniz ancak GoodbyeDPI ile giremediğiniz site/oyun/uygulama olursa GoodbyeDPI devre dışı bırakıp kontrol edin.
-• GoodbyeDPI, VPN'ler ile uyumlu çalışmaz. Herhangi bir VPN'e bağlanmanız gerekirse GoodbyeDPI'a durdur/devre dışı bırak/kaldır seçeneklerinden uygun olan işlemi yapmanız gerekmektedir.
-• Programı tamamen silmek istediğinizde klasör silinmez ve hata verirse Unlocker programını yükledikten sonra klasöre sağ tıklayın ve Unlocker simgesine tıklayın. Daha sonra görseldeki gibi silme işlemini yapın. https://www.iobit.com/en/iobit-unlocker.php
-![Repo1](https://raw.githubusercontent.com/OgnitorenKs12/Batch_GoodbyeDPI/main/.github/SS/TR0.png)
-
 ### Kurulum
 Öncelikle programı indirip silinmeyecek bir konuma atınız. Klasör yolunda Türkçe harf ve boşluk olmasın.
 Uygulamayı yönetici olarak çalıştırın.
@@ -36,3 +30,9 @@ Devre dışı bırak: Hizmeti devre dışı bırakır. Sistem yeniden başlasa d
 ![Repo5](https://raw.githubusercontent.com/OgnitorenKs12/Batch_GoodbyeDPI/main/.github/SS/TR5.png)
 
 Kaldır: Hizmeti siler ve yönetim menüsünden sizi kurulum menüsüne aktarır.
+
+### UYARI
+Daha önce ulaşabildiğiniz ancak GoodbyeDPI ile giremediğiniz site/oyun/uygulama olursa GoodbyeDPI devre dışı bırakıp kontrol edin.
+GoodbyeDPI, VPN'ler ile uyumlu çalışmaz. Herhangi bir VPN'e bağlanmanız gerekirse GoodbyeDPI'a durdur/devre dışı bırak/kaldır seçeneklerinden uygun olan işlemi yapmanız gerekmektedir.
+Programı tamamen silmek istediğinizde klasör silinmez ve hata verirse Unlocker programını yükledikten sonra klasöre sağ tıklayın ve Unlocker simgesine tıklayın. Daha sonra görseldeki gibi silme işlemini yapın. https://www.iobit.com/en/iobit-unlocker.php
+![Repo1](https://raw.githubusercontent.com/OgnitorenKs12/Batch_GoodbyeDPI/main/.github/SS/TR0.png)
