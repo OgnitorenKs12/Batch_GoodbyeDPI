@@ -17,22 +17,17 @@
 ![Repo1](https://raw.githubusercontent.com/OgnitorenKs12/Batch_GoodbyeDPI/main/.github/SS/TR0.png)
 
 ### Kurulum
-• Öncelikle programı indirip silinmeyecek bir konuma atınız. Klasör yolunda Türkçe harf ve boşluk olmasın.
-• Uygulamayı yönetici olarak çalıştırın.
-• Uygulama öncelikle sistemde GoodbyeDPI adında hizmetin kurulu olup olmadığını kontrol edecek. Yüklü değilse kurulum ekranına yönlendirecek. Hizmet olarak kurulum için 1 tuşlayıp, enter tuşuna basın.
+Öncelikle programı indirip silinmeyecek bir konuma atınız. Klasör yolunda Türkçe harf ve boşluk olmasın.
+Uygulamayı yönetici olarak çalıştırın.
+Uygulama öncelikle sistemde GoodbyeDPI adında hizmetin kurulu olup olmadığını kontrol edecek. Yüklü değilse kurulum ekranına yönlendirecek. Hizmet olarak kurulum için 1 tuşlayıp, enter tuşuna basın.
 ![Repo1](https://raw.githubusercontent.com/OgnitorenKs12/Batch_GoodbyeDPI/main/.github/SS/TR1.png)
-
-• DNS adresi seçmenizi isteyecek uygulama içine Claudflare ve Google'ın DNS adreslerini ekledim. Birini tuşlayın ilerleyin. Kurulum işleminin bitmesini bekleyin.
+DNS adresi seçmenizi isteyecek uygulama içine Claudflare ve Google'ın DNS adreslerini ekledim. Birini tuşlayın ilerleyin. Kurulum işleminin bitmesini bekleyin.
 ![Repo2](https://raw.githubusercontent.com/OgnitorenKs12/Batch_GoodbyeDPI/main/.github/SS/TR2.png)
-
-• Kurulum işlemi bitince sizi hizmeti yöneteceğiniz menüye aktaracak. Bu menünün üst bölümünde hizmetin çalışma durumu hakkında bilgi vermektedir.
-![Repo1](https://raw.githubusercontent.com/OgnitorenKs12/Batch_GoodbyeDPI/main/.github/SS/TR3.png)
-
-• Çalıştır: Hizmeti yeniden çalıştırmanızı sağlar. Durdur ve devre dışı bırak fonksiyonlarında sonra kullanabilirsiniz. Üst menüdeki bilgi ekranı yukarı görseldeki gibi olur.
-• Durdur: Hizmeti durdurur, sistemi yeniden başlattığınızda veya çalıştır bölümünü uyguladığınızda aktifleşir. Üst menüdeki bilgi ekranı aşağıdaki gibi olur.
-![Repo1](https://raw.githubusercontent.com/OgnitorenKs12/Batch_GoodbyeDPI/main/.github/SS/TR4.png)
-
-• Devre dışı bırak: Hizmeti devre dışı bırakır. Sistem yeniden başlasa dahi açılmaz. Uygulama içinden çalıştır seçeneğiyle aktifleştirebilirsiniz. Üst menüdeki bilgi ekranı aşağıdaki gibi olur.
-![Repo1](https://raw.githubusercontent.com/OgnitorenKs12/Batch_GoodbyeDPI/main/.github/SS/TR5.png)
-
-• Kaldır: Hizmeti siler ve yönetim menüsünden sizi kurulum menüsüne aktarır.
+Kurulum işlemi bitince sizi hizmeti yöneteceğiniz menüye aktaracak. Bu menünün üst bölümünde hizmetin çalışma durumu hakkında bilgi vermektedir.
+![Repo3](https://raw.githubusercontent.com/OgnitorenKs12/Batch_GoodbyeDPI/main/.github/SS/TR3.png)
+Çalıştır: Hizmeti yeniden çalıştırmanızı sağlar. Durdur ve devre dışı bırak fonksiyonlarında sonra kullanabilirsiniz. Üst menüdeki bilgi ekranı yukarı görseldeki gibi olur.
+Durdur: Hizmeti durdurur, sistemi yeniden başlattığınızda veya çalıştır bölümünü uyguladığınızda aktifleşir. Üst menüdeki bilgi ekranı aşağıdaki gibi olur.
+![Repo4](https://raw.githubusercontent.com/OgnitorenKs12/Batch_GoodbyeDPI/main/.github/SS/TR4.png)
+Devre dışı bırak: Hizmeti devre dışı bırakır. Sistem yeniden başlasa dahi açılmaz. Uygulama içinden çalıştır seçeneğiyle aktifleştirebilirsiniz. Üst menüdeki bilgi ekranı aşağıdaki gibi olur.
+![Repo5](https://raw.githubusercontent.com/OgnitorenKs12/Batch_GoodbyeDPI/main/.github/SS/TR5.png)
+Kaldır: Hizmeti siler ve yönetim menüsünden sizi kurulum menüsüne aktarır.
