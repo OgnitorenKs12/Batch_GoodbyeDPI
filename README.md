@@ -13,7 +13,7 @@
 ### Kurulum
 Öncelikle programı indirip silinmeyecek bir konuma atınız. Klasör yolunda Türkçe harf ve boşluk olmasın.
 Uygulamayı yönetici olarak çalıştırın.
-Uygulama öncelikle sistemde GoodbyeDPI adında hizmetin kurulu olup olmadığını kontrol edecek. Yüklü değilse kurulum ekranına yönlendirecek. Hizmet olarak kurulum için 1 tuşlayıp, enter tuşuna basın.
+Uygulama öncelikle sistemde GoodbyeDPI adında hizmetin kurulu olup olmadığını kontrol edecek. Yüklü değilse kurulum ekranına yönlendirecek. Hizmet olarak kurulum için 1 tuşlayıp, enter tuşuna basın. 1 numaralı işlem işe yaramazsa 2 numaralı işlemi deneyin.
 ![Repo1](https://raw.githubusercontent.com/OgnitorenKs12/Batch_GoodbyeDPI/main/.github/SS/TR1.png)
 
 DNS adresi seçmenizi isteyecek uygulama içine Claudflare ve Google'ın DNS adreslerini ekledim. Birini seçip tuşladıktan sonra kurulum işleminin bitmesini bekleyin.

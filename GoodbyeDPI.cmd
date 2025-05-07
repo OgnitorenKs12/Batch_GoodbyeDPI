@@ -20,7 +20,7 @@ echo off
 chcp 65001
 setlocal enabledelayedexpansion
 cls
-title GoodbyeDPI │ OgnitorenKs
+title GoodbyeDPI_v2.0 │ OgnitorenKs
 mode con cols=80 lines=22
 
 REM -------------------------------------------------------------
@@ -104,12 +104,23 @@ if "!Menu_Rota!" EQU "NT" (goto Menu_2)
 REM -------------------------------------------------------------
 :Menu_1
 Call :Dil A 2 Language_Menu_!Dil!_4_&echo  %R%[32m 1%R%[90m-%R%[33m !LA2!%R%[90m [--set-ttl 3]%R%[0m
+Call :Dil A 2 Language_Menu_!Dil!_4_&echo  %R%[32m 2%R%[90m-%R%[33m !LA2!%R%[90m [--set-ttl 3 --dns-addr 77.88.8.8 --dns-port 1253]%R%[0m
 Call :Dil A 2 Language_Sabit_!Dil!_1_&set /p Menu=%R%[32m  ► !LA2! %R%[90m= %R%[0m
 echo.
 if !Menu! EQU 1 (Call :DNS_Menu
                  net stop "GoodbyeDPI" > NUL 2>&1
                  sc delete "GoodbyeDPI" > NUL 2>&1
                  sc create "GoodbyeDPI" binPath= "\"%Konum%\Bin\!Arch!\goodbyedpi.exe\" --set-ttl 3" start= "auto" > NUL 2>&1
+				 Call :Dil A 2 Language_Sabit_!Dil!_2_&sc description "GoodbyeDPI" "!LA2!" > NUL 2>&1
+                 Call :DNS_Cache_Clear
+                 net start "GoodbyeDPI" > NUL 2>&1
+				 Call :Dil A 2 Language_Sabit_!Dil!_3_&Call :For_Print %R%[92m  ▼ !LA2! ▼%R%[0m
+                 Call :Bekle 2
+                )
+if !Menu! EQU 2 (Call :DNS_Menu
+                 net stop "GoodbyeDPI" > NUL 2>&1
+                 sc delete "GoodbyeDPI" > NUL 2>&1
+                 sc create "GoodbyeDPI" binPath= "\"%Konum%\Bin\!Arch!\goodbyedpi.exe\" --set-ttl 3 --dns-addr 77.88.8.8 --dns-port 1253 --dnsv6-addr 2a02:6b8::feed:0ff --dnsv6-port 1253" start= "auto" > NUL 2>&1 > NUL 2>&1
 				 Call :Dil A 2 Language_Sabit_!Dil!_2_&sc description "GoodbyeDPI" "!LA2!" > NUL 2>&1
                  Call :DNS_Cache_Clear
                  net start "GoodbyeDPI" > NUL 2>&1
