@@ -47,15 +47,15 @@ REM -------------------------------------------------------------
 REM Sistem dil kontrolü
 set Dil=EN
 FOR /F "tokens=6" %%a in ('Dism /Online /Get-intl ^| Find /I "Default system UI language"') do (
-	if "%%a" EQU "tr-TR" (set Dil=TR)
+    if "%%a" EQU "tr-TR" (set Dil=TR)
 )
 
 REM -------------------------------------------------------------
 REM Mimari kontrolü
 set Arch=x86
 FOR /F "tokens=3" %%a in ('reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "PROCESSOR_ARCHITECTURE" 2^>NUL') do (
-	if "%%a" EQU "AMD64" (set Arch=x86_64)
-	if "%%a" EQU "IA64" (set Arch=x86_64)
+    if "%%a" EQU "AMD64" (set Arch=x86_64)
+    if "%%a" EQU "IA64" (set Arch=x86_64)
 )
 
 REM -------------------------------------------------------------
@@ -74,10 +74,10 @@ set Durum_2=
 set Menu_Rota=NT
 reg query "HKLM\SYSTEM\CurrentControlSet\Services\GoodbyeDPI" /v "Start" > NUL 2>&1
     if !errorlevel! EQU 0 (FOR /F "skip=2 delims=x tokens=2" %%b in ('reg query "HKLM\System\CurrentControlSet\Services\GoodbyeDPI" /v "Start" 2^>NUL') do (
-						       if %%b NEQ 2 (Call :Dil A 2 Language_!Dil!_1_&set Durum_2=%R%[91m!LA2!)
-						       if %%b EQU 2 (Call :Dil A 2 Language_!Dil!_2_&set Durum_2=%R%[92m!LA2!)
-						  ))
-	if !errorlevel! NEQ 0 (Call :Dil A 2 Language_!Dil!_3_&set Durum_2=%R%[91m!LA2!&set Menu_Rota=1)
+                               if %%b NEQ 2 (Call :Dil A 2 Language_!Dil!_1_&set Durum_2=%R%[91m!LA2!)
+                               if %%b EQU 2 (Call :Dil A 2 Language_!Dil!_2_&set Durum_2=%R%[92m!LA2!)
+                          ))
+    if !errorlevel! NEQ 0 (Call :Dil A 2 Language_!Dil!_3_&set Durum_2=%R%[91m!LA2!&set Menu_Rota=1)
 REM Hizmetin çalışıp çalışmadığını kontrol eder
 set Durum=
 chcp 437 > NUL 2>&1
@@ -111,20 +111,20 @@ if !Menu! EQU 1 (Call :DNS_Menu
                  net stop "GoodbyeDPI" > NUL 2>&1
                  sc delete "GoodbyeDPI" > NUL 2>&1
                  sc create "GoodbyeDPI" binPath= "\"%Konum%\Bin\!Arch!\goodbyedpi.exe\" --set-ttl 3" start= "auto" > NUL 2>&1
-				 Call :Dil A 2 Language_Sabit_!Dil!_2_&sc description "GoodbyeDPI" "!LA2!" > NUL 2>&1
+                 Call :Dil A 2 Language_Sabit_!Dil!_2_&sc description "GoodbyeDPI" "!LA2!" > NUL 2>&1
                  Call :DNS_Cache_Clear
                  net start "GoodbyeDPI" > NUL 2>&1
-				 Call :Dil A 2 Language_Sabit_!Dil!_3_&Call :For_Print %R%[92m  ▼ !LA2! ▼%R%[0m
+                 Call :Dil A 2 Language_Sabit_!Dil!_3_&Call :For_Print %R%[92m  ▼ !LA2! ▼%R%[0m
                  Call :Bekle 2
                 )
 if !Menu! EQU 2 (Call :DNS_Menu
                  net stop "GoodbyeDPI" > NUL 2>&1
                  sc delete "GoodbyeDPI" > NUL 2>&1
                  sc create "GoodbyeDPI" binPath= "\"%Konum%\Bin\!Arch!\goodbyedpi.exe\" --set-ttl 3 --dns-addr 77.88.8.8 --dns-port 1253 --dnsv6-addr 2a02:6b8::feed:0ff --dnsv6-port 1253" start= "auto" > NUL 2>&1 > NUL 2>&1
-				 Call :Dil A 2 Language_Sabit_!Dil!_2_&sc description "GoodbyeDPI" "!LA2!" > NUL 2>&1
+                 Call :Dil A 2 Language_Sabit_!Dil!_2_&sc description "GoodbyeDPI" "!LA2!" > NUL 2>&1
                  Call :DNS_Cache_Clear
                  net start "GoodbyeDPI" > NUL 2>&1
-				 Call :Dil A 2 Language_Sabit_!Dil!_3_&Call :For_Print %R%[92m  ▼ !LA2! ▼%R%[0m
+                 Call :Dil A 2 Language_Sabit_!Dil!_3_&Call :For_Print %R%[92m  ▼ !LA2! ▼%R%[0m
                  Call :Bekle 2
                 )
 cls
@@ -141,7 +141,7 @@ echo.
 Call :Dil A 2 Language_Sabit_!Dil!_9_&echo  %R%[32m !LA2!%R%[0m
     if !Menu! EQU 1 (sc config GoodbyeDPI start= auto > NUL 2>&1
                      net start GoodbyeDPI > NUL 2>&1
-					 Call :DNS_Cache_Clear
+                     Call :DNS_Cache_Clear
                      Call :Dil A 2 Language_Sabit_!Dil!_4_&Call :For_Print %R%[92m  ▼ !LA2! ▼%R%[0m
                      Call :Bekle 2
                     )
@@ -156,9 +156,9 @@ Call :Dil A 2 Language_Sabit_!Dil!_9_&echo  %R%[32m !LA2!%R%[0m
                     )
     if !Menu! EQU 4 (net stop "GoodbyeDPI" > NUL 2>&1
                      sc delete "GoodbyeDPI" > NUL 2>&1
-					 Call :Powershell "Set-DnsClientServerAddress -InterfaceAlias 'Ethernet' -ResetServerAddresses" > NUL 2>&1
-					 Call :Powershell "Set-DnsClientServerAddress -InterfaceAlias 'Wi-fi' -ResetServerAddresses" > NUL 2>&1
-					 Call :DNS_Cache_Clear
+                     Call :Powershell "Set-DnsClientServerAddress -InterfaceAlias 'Ethernet' -ResetServerAddresses" > NUL 2>&1
+                     Call :Powershell "Set-DnsClientServerAddress -InterfaceAlias 'Wi-fi' -ResetServerAddresses" > NUL 2>&1
+                     Call :DNS_Cache_Clear
                      Call :Dil A 2 Language_Sabit_!Dil!_7_&Call :For_Print %R%[92m  ▼ !LA2! ▼%R%[0m
                      Call :Bekle 2
                     )
@@ -188,7 +188,7 @@ Call :Dil A 2 Language_Sabit_!Dil!_1_&set /p DNS_Value=%R%[32m  ► !LA2! %R%[90
 REM Claudflare varsayılan olarak ayarlıyorum. Farklı seçimde ayarlama yapılır.
 Call :Dil A 2 Language_Sabit_!Dil!_10_&echo  %R%[32m !LA2!%R%[0m
 Call :DNS_1
-	if "!DNS_Value!" EQU "2" (Call :DNS_2)
+    if "!DNS_Value!" EQU "2" (Call :DNS_2)
 set DNS_Value=
 goto :eof
 
