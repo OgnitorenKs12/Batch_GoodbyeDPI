@@ -182,6 +182,8 @@ FOR %%k in (
 "128.116.13.3 contentdelivery.roblox.com"
 "128.116.13.3 locale.roblox.com"
 "128.116.13.3 tracing.roblox.com"
+"2.16.16.149 setup.rbxcdn.com"
+"2.16.16.149 setup-aws.rbxcdn.com"
 ) do (
     Findstr /i "%%k" !Windir!\System32\drivers\etc\host > NUL 2>&1
 	    if "!errorlevel!" NEQ "0" (Call :Powershell "Add-Content -Path '!Windir!\System32\drivers\etc\hosts' -Value ([Environment]::NewLine + '%%k')" > NUL 2>&1)
@@ -190,8 +192,7 @@ goto :eof
 
 REM -------------------------------------------------------------
 :Host_Remove
-:: Tek bir komutla, döngü kullanmadan tüm adresleri temizliyoruz.
-Call :Powershell "$h='!Windir!\System32\drivers\etc\hosts'; (Get-Content $h) | Where-Object { $_ -notmatch 'cdn\.discordapp\.com|clientsettings\.roblox\.com|clientsettingsapi\.roblox\.com|ephemeralcounters\.api\.roblox\.com|contentdelivery\.roblox\.com|locale\.roblox\.com|tracing\.roblox\.com' } | Set-Content $h" > NUL 2>&1
+Call :Powershell "$h='!Windir!\System32\drivers\etc\hosts'; (Get-Content $h) | Where-Object { $_ -notmatch 'cdn\.discordapp\.com|clientsettings\.roblox\.com|clientsettingsapi\.roblox\.com|ephemeralcounters\.api\.roblox\.com|contentdelivery\.roblox\.com|locale\.roblox\.com|tracing\.roblox\.com|setup\.rbxcdn\.com|setup-aws\.rbxcdn\.com' } | Set-Content $h" > NUL 2>&1
 goto :eof
 
 REM -------------------------------------------------------------
