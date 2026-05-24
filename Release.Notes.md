@@ -4,7 +4,12 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: [https://ognitorenks.blospot.com](https://ognitorenks.blospot.com)
 
-<details><summary><B> Versiyon 3.0 ► 24.05.2026 </B></summary>
+<details><summary><B> Versiyon 4.0 ► 24.05.2026 </B></summary>
+
+    • --reverse-frag komutu genel olarak şişme yaptığı için uzun vadede zararlı olacağından kaldırıldı. 
+	• -e 2 parametrei 40 olarak düzenlendi. Daha büyük boyutlarda dosyayı bölecek ancak kısıtlamaları aşmaya devam edebilecek.
+   
+</details><details><summary><B> Versiyon 3.0 ► 24.05.2026 </B></summary>
     
 	• GoodbyeDPI uygulamasına yapımcısı tarafından güncelleme verilmeyince kaynak kodlarını kullanarak yeni ve sorunları çözecek bir güncelleme hazırladım.
 	• GoodbyeDPI varsayılan modunda QUIC/HTTP3 engelleme kapatıldı.

@@ -20,7 +20,7 @@ echo off
 chcp 65001
 setlocal enabledelayedexpansion
 cls
-title GoodbyeDPI_v3.0 │ OgnitorenKs
+title GoodbyeDPI_v4.0 │ OgnitorenKs
 mode con cols=80 lines=22
 
 REM -------------------------------------------------------------
@@ -103,15 +103,14 @@ if "!Menu_Rota!" EQU "1" (goto Menu_1)
 if "!Menu_Rota!" EQU "NT" (goto Menu_2)
 REM -------------------------------------------------------------
 :Menu_1
-Call :Dil A 2 Language_Menu_!Dil!_4_&echo  %R%[32m 1%R%[90m-%R%[33m !LA2!%R%[90m [-f 2 -e 2 --reverse-frag --max-payload --set-ttl 3 --exclude-hosts Exclude.txt]%R%[0m
+Call :Dil A 2 Language_Menu_!Dil!_4_&echo  %R%[32m 1%R%[90m-%R%[33m !LA2!%R%[90m [-f 2 -e 40 --max-payload --set-ttl 3 --exclude-hosts Exclude.txt]%R%[0m
 Call :Dil A 2 Language_Sabit_!Dil!_1_&set /p Menu=%R%[32m  ► !LA2! %R%[90m= %R%[0m
 echo.
 if !Menu! EQU 1 (Call :DNS_Menu
                  net stop "GoodbyeDPI" > NUL 2>&1
                  sc delete "GoodbyeDPI" > NUL 2>&1
 				 Call :Host_Print
-                 sc create "GoodbyeDPI" binPath= "\"%Konum%\Bin\!Arch!\goodbyedpi.exe\" -f 2 -e 2 --reverse-frag --max-payload --set-ttl 3 --exclude-hosts Exclude.txt" start= "auto" > NUL 2>&1
-                 REM sc create "GoodbyeDPI" binPath= "\"%Konum%\Bin\!Arch!\goodbyedpi.exe\" -f 2 -e 40 --reverse-frag --max-payload --set-ttl 3 --exclude-hosts \"%Konum%\Bin\!Arch!\Exclude.txt\"" start= "auto" > NUL 2>&1
+                 sc create "GoodbyeDPI" binPath= "\"%Konum%\Bin\!Arch!\goodbyedpi.exe\" -f 2 -e 40 --max-payload --set-ttl 3 --exclude-hosts Exclude.txt" start= "auto" > NUL 2>&1
 				 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient" /f /v "DoHPolicy" /t REG_DWORD /d 2 > NUL 2>&1
 				 ipconfig /flushdns > NUL 2>&1
                  Call :Dil A 2 Language_Sabit_!Dil!_2_&sc description "GoodbyeDPI" "!LA2!" > NUL 2>&1
