@@ -4,8 +4,18 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: [https://ognitorenks.blospot.com](https://ognitorenks.blospot.com)
 
+<details><summary><B> Versiyon 3.0 ► 24.05.2026 </B></summary>
+    
+	• GoodbyeDPI uygulamasına yapımcısı tarafından güncelleme verilmeyince kaynak kodlarını kullanarak yeni ve sorunları çözecek bir güncelleme hazırladım.
+	• GoodbyeDPI varsayılan modunda QUIC/HTTP3 engelleme kapatıldı.
+	    - Neden: Modern tarayıcılar ve uygulamalar QUIC kullanıyor. QUIC’in engellenmesi uygulamalarda gecikmeye sebep olabiliyor.
+	• -f veya -e ile fragmentation kullanıldığında native fragmentation otomatik aktif hale getirildi.
+	    - Neden: Eski window-size fragmentation yöntemi yerine daha hızlı ve uyumlu fragment gönderimi sağlamak için.
+	• --exclude-hosts parametresi eklendi. Exclude.txt içindeki domainlerde fake TTL paketi göndermeyi atlar, ancak fragmentation uygulamaya devam eder.
+	    - Neden: Bazı uygulama/CDN bağlantılarında fake TTL sorun çıkarırken, genel siteler için TTL yöntemi gerekli kalıyor. Bu ayrım domain bazlı yapılır.
+	• Hosts dosyasına bazı eklemeler yapıldı. Roblox ve Discord'da sorun yaşanmaması için.
 
-<details><summary><B> Versiyon 2.0 ► 07.05.2025 </B></summary>
+</details><details><summary><B> Versiyon 2.0 ► 07.05.2025 </B></summary>
 
     • --set-ttl 3 yönteminde birçok kullanıcı sorun yaşıyordu.
     • Çözüm olarak alternatif bir yöntem daha ekledim > --set-ttl 3 --dns-addr 77.88.8.8 --dns-port 1253 --dnsv6-addr 2a02:6b8::feed:0ff --dnsv6-port 1253

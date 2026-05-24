@@ -8,12 +8,12 @@
 
 • GoodbyeDPI ile özgür bir internet deneyimi yaşamanız için programın her zaman çalışması gerekiyor. Bundan dolayı uygulamayı indirip kullanmak isterseniz. Silinmeyecek bir konuma almanız gerekmektedir. Ancak bu uygulamayı hizmet olarak yükleyip her açılışta çalışacak şekilde ayarladığımız için çalıştığını yalnızda Görev yöneticisinde göreceksiniz. 1 MB bile bulmayan RAM kullanımı vardır.
 
-• GoodbyeDPI uygulaması benim yaptığım bir uygulama değildir. Ben sadece uygulamanın arayüzlü bir şekilde kurulup, yönetilmesi için batch script ile bir yönetim programı hazırladım. Uygulamanın resmi adresi= https://github.com/ValdikSS/GoodbyeDPI
+• GoodbyeDPI uygulaması benim yaptığım bir uygulama değildir. Ancak yapımcısı uzun süre güncelleme vermediği için oluşan sorunları çözmek için kaynak kodlarıyla çalışır güncel sürümü hazırlamaya çalıştım. Ben sadece uygulamanın arayüzlü bir şekilde kurulup, yönetilmesi için batch script ile bir yönetim programı hazırladım. Uygulamanın resmi adresi= https://github.com/ValdikSS/GoodbyeDPI
 
 ### Kurulum
 Öncelikle programı indirip silinmeyecek bir konuma atınız. Klasör yolunda Türkçe harf ve boşluk olmasın.
 Uygulamayı yönetici olarak çalıştırın.
-Uygulama öncelikle sistemde GoodbyeDPI adında hizmetin kurulu olup olmadığını kontrol edecek. Yüklü değilse kurulum ekranına yönlendirecek. Hizmet olarak kurulum için 1 tuşlayıp, enter tuşuna basın. 1 numaralı işlem işe yaramazsa 2 numaralı işlemi deneyin.
+Uygulama öncelikle sistemde GoodbyeDPI adında hizmetin kurulu olup olmadığını kontrol edecek. Yüklü değilse kurulum ekranına yönlendirecek. Hizmet olarak kurulum için 1 tuşlayıp, enter tuşuna basın.
 ![Repo1](https://raw.githubusercontent.com/OgnitorenKs12/Batch_GoodbyeDPI/main/.github/SS/TR1.png)
 
 DNS adresi seçmenizi isteyecek uygulama içine Claudflare ve Google'ın DNS adreslerini ekledim. Birini seçip tuşladıktan sonra kurulum işleminin bitmesini bekleyin.
