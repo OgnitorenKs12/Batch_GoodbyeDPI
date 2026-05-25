@@ -20,7 +20,7 @@ echo off
 chcp 65001
 setlocal enabledelayedexpansion
 cls
-title ZapretDPI_v5.1 │ OgnitorenKs
+title ZapretDPI_v5.2 │ OgnitorenKs
 mode con cols=80 lines=22
 
 REM -------------------------------------------------------------

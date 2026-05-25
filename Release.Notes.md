@@ -4,7 +4,11 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: [https://ognitorenks.blospot.com](https://ognitorenks.blospot.com)
 
-<details><summary><B> Versiyon 5.1 ► 25.05.2026 </B></summary>
+<details><summary><B> Versiyon 5.2 ► 25.05.2026 </B></summary>
+
+    • hosts içine yeni discord adresleri eklendi.
+	
+</details><details><summary><B> Versiyon 5.1 ► 25.05.2026 </B></summary>
 
     • Sahte paket gönderimi kaldırıldı. Ağda gereksiz yük yapıyordu. Bu olmadanda dpi atlatılıyor.
 	• Bölgesel olarak çalışacak ikinci mod ekledim. Burada yalnızca Roblox ve Discord uygulamaları/siteleri etkilenir. Şişme sorununun önüne %99.9 oranında geçtim. Tavsiyem bu modu kullanın, kullanmak istediğiniz farklı siteler varsa domain adresini yasakli.txt dosyasına içine yazın, https falan olmasın düz yazın.
