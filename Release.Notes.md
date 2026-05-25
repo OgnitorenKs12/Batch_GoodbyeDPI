@@ -4,7 +4,13 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: [https://ognitorenks.blospot.com](https://ognitorenks.blospot.com)
 
-<details><summary><B> Versiyon 5.0 ► 25.05.2026 </B></summary>
+<details><summary><B> Versiyon 5.1 ► 25.05.2026 </B></summary>
+
+    • Sahte paket gönderimi kaldırıldı. Ağda gereksiz yük yapıyordu. Bu olmadanda dpi atlatılıyor.
+	• Bölgesel olarak çalışacak ikinci mod ekledim. Burada yalnızca Roblox ve Discord uygulamaları/siteleri etkilenir. Şişme sorununun önüne %99.9 oranında geçtim. Tavsiyem bu modu kullanın, kullanmak istediğiniz farklı siteler varsa domain adresini yasakli.txt dosyasına içine yazın, https falan olmasın düz yazın.
+	• hosts içine eklenecek ip ve domainlerde sorun olmaması için ilk kurulumda otomatik olarak ip adresleri güncel haliyle alınır. Uygulamalarda ağırlaşma hissedilirse muhtemel bir ip yenilemesi olabilir bu durumda programı arayüzünden devre dışı bırak diyerek kapatıp yeniden kurun.
+	
+</details><details><summary><B> Versiyon 5.0 ► 25.05.2026 </B></summary>
 
     • GoodbyeDPI tarafında sorunlar çözülmeyince programın altyapısı olarak ZapretDPI kullanıldı.
 	• host içine ekleme ve silme işlemlerini başarılı şekilde yapmak için "hosts-editor.exe" uygulaması hazırlandı.
