@@ -1,0 +1,59 @@
+# ==================================================
+# OgniShell - Discord & Roblox Alt Alan Adlari Listesi
+# ==================================================
+
+# --- Discord Ana ve Alt Alan Adlari ---
+discord.com
+www.discord.com
+cdn.discordapp.com
+media.discordapp.net
+images.discordapp.net
+gateway.discord.gg
+latency.discord.media
+dis.gd
+discord.co
+discordstatus.com
+discordapp.io
+status.discordapp.com
+router.discordapp.net
+voice.discord.media
+api.discord.gg
+api.discordapp.com
+canary.discord.com
+ptb.discord.com
+dl.discordapp.net
+updates.discord.com
+
+# --- Roblox Ana ve Alt Alan Adlari ---
+roblox.com
+www.roblox.com
+api.roblox.com
+clientsettings.roblox.com
+clientsettingsapi.roblox.com
+ephemeralcounters.api.roblox.com
+contentdelivery.roblox.com
+locale.roblox.com
+tracing.roblox.com
+rbxcdn.com
+setup.rbxcdn.com
+setup-aws.rbxcdn.com
+games.roblox.com
+auth.roblox.com
+images.rbxcdn.com
+js.rbxcdn.com
+assetdelivery.roblox.com
+catalog.roblox.com
+avatar.roblox.com
+users.roblox.com
+presence.roblox.com
+thumbnails.roblox.com
+badges.roblox.com
+economy.roblox.com
+abtesting.roblox.com
+gamepersistence.roblox.com
+groups.roblox.com
+chat.roblox.com
+friends.roblox.com
+metrics.roblox.com
+realtime.roblox.com
+web.roblox.com
