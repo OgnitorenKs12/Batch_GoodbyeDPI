@@ -4,7 +4,15 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: [https://ognitorenks.blospot.com](https://ognitorenks.blospot.com)
 
-<details><summary><B> Versiyon 4.0 ► 24.05.2026 </B></summary>
+<details><summary><B> Versiyon 5.0 ► 25.05.2026 </B></summary>
+
+    • GoodbyeDPI tarafında sorunlar çözülmeyince programın altyapısı olarak ZapretDPI kullanıldı.
+	• host içine ekleme ve silme işlemlerini başarılı şekilde yapmak için "hosts-editor.exe" uygulaması hazırlandı.
+	• ZapretDPI ile kusursuz parametre ayarı yapıldı.
+	• Roblox ve Discord uygulamalarında sorun yaşanmaması için host içine kurulumda eklemeler yapılır.
+	• Discord ve Roblox gibi uygulamalar sahte paket gönderimiyle şişip ağırlaşma sorunu ZapretDPI ile giderildi. Bu uygulamalar açılış sağlandıktan sonra gereksiz sahte paket gönderimini sonlandırır. Bunun ayarlaması "cutoff.txt" içine yapılan domain eklemeleri ile yapılmaktadır. Özel bir ekleme yapmak istiyorsanız buraya yapmanız gerekmektedir. 
+
+</details><details><summary><B> Versiyon 4.0 ► 24.05.2026 </B></summary>
 
     • --reverse-frag komutu genel olarak şişme yaptığı için uzun vadede zararlı olacağından kaldırıldı. 
 	• -e 2 parametrei 40 olarak düzenlendi. Daha büyük boyutlarda dosyayı bölecek ancak kısıtlamaları aşmaya devam edebilecek.

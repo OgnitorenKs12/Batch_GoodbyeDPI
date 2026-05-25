@@ -1,4 +1,0 @@
-# ISP'nin engelledigi domain'ler - SADECE bunlara DPI bypass uygulanir
-# CDN domain'leri KASITLI olarak eklenmedi (profil fotolari icin)
-discord.com
-discord.gg

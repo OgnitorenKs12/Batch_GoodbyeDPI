@@ -1,6 +1,0 @@
-cdn.discordapp.com
-media.discordapp.net
-images-ext-1.discordapp.net
-images-ext-2.discordapp.net
-discord.media
-discordcdn.com
